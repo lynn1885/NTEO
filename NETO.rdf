@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO/"
+     xml:base="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#_TEST1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#_TEST1">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#_TEST2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#_TEST2">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#after">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#before"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#before">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#changesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#changesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#during"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#decreasesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#decreasesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#changesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#down-regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#down-regulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#regulates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#during -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#during">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#equals -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#equals">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#finishedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#finishedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#finishes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#finishes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#finishes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasActionTendency -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasActionTendency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraisalObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraisalObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraisalResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraisalResult">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalResult"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraiser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAppraiser">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraiser"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAspect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasAspect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObject"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObjectAspect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasCategory">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasEmotionWord -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasEmotionWord">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionWord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasExpression -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasExpression">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasIntensity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasIntensity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasObject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasObject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasSubject">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#hasTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#increasesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#increasesTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#changesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#leadsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#leadsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#meets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#meets">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#metBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#metBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#metBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#overlappedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#overlappedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#overlaps"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#overlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#overlaps">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#providesCircumstance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#providesCircumstance">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#regulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#shiftsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#shiftsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#changesTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#startedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#startedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#starts"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#starts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#starts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#temporal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#triggers">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#up-regulates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#up-regulates">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#regulates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Action"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Affection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Affection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObjectAspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObjectAspect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalResult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalResult"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraiser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraiser"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Cheerfulness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Cheerfulness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Contentment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Contentment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disappointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disappointment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disgust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disgust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionWord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionWord"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Enthrallment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Enthrallment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Envy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Envy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Exasperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Exasperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Fear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Fear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#HighIntensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#HighIntensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Horror -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Horror">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Fear"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Nervousness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Irritation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Irritation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Longing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Longing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#LowIntensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#LowIntensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Lust -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Lust">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MediumIntensity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MediumIntensity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MotorExpression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MotorExpression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Neglect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Neglect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Nervousness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Nervousness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Fear"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NoEmotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NoEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Optimism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Optimism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PhysiologicalArousal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PhysiologicalArousal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Pride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Pride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Rage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Rage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Relief -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Relief">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Shame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Shame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#SubjectiveFeeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#SubjectiveFeeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Suffering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Suffering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sympathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sympathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Time"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Torment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Torment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Zest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Zest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#test -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#test">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://sws.geonames.org/1799962/ -->
+
+    <owl:NamedIndividual rdf:about="https://sws.geonames.org/1799962/">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#ActionTendency"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraisal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalObjectAspect"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#AppraisalResult"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Appraiser"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Emotion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionCategory"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionExpression"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionIntensity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#EmotionWord"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Object"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Place"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Subject"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Time"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Affection"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Longing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Lust"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Anger"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Fear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Cheerfulness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Contentment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Enthrallment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Optimism"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Pride"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Relief"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Zest"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disappointment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Neglect"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sadness2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Shame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Suffering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Sympathy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Disgust"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Envy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Exasperation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Irritation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Rage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Torment"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#HighIntensity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#LowIntensity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MediumIntensity"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Joy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Love"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#Surprise"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#MotorExpression"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PhysiologicalArousal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#SubjectiveFeeling"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NegativeEmotion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#NoEmotion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ji/ontologies/2024/7/NTEO#PositiveEmotion"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
